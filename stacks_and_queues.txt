@@ -1,0 +1,54 @@
+1. What is the main difference between a stack and a queue?
+    A. The main difference is the order in which elements are 'processed'. Stacks use a LIFO order and Queues use a LIFO order.
+
+2. What are the similarities between stacks and queues?
+    A.Both are data structures that act as a holding place for elements, or processing requests. 
+
+3. Imagine you are an engineer tasked with implementing the UNDO and REDO options in a word processor such as Microsoft Word. Which data structure would you use for each option and why?
+    A. For the both options I would use the stack structure because of the LIFO feature. The last task that was performed will be the one that needs to be either undone or redone. 
+
+Programming questions
+1. Given a string, reverse it using a stack. For example, the string "Bloc!" should be converted to "!colB".
+    A.  FUNCTION REVERSE('string')
+            create new stack    
+            for each character
+                push to new stack
+            endfor
+            create new empty string variable
+            while new stack is not empty
+                pop next character
+                append character to new string variable
+            end while
+            return new string variable
+        end FUNCTION
+
+
+2. Implement the delete functionality of a stack using one queue. Make a FIFO data structure mirror the functionality of a LIFO data structure.
+
+CLASS Stack
+ FUNCTION pop(queue)
+   ...fill in pseudocode here
+    A.  While queue is not empty
+        shift first element into temp variable
+        push temp to bottom/end of the list 
+        end while
+        return temp
+ END FUNCTION
+END CLASS
+
+3. Fill in the methods for the following Queue class so that it will work as expected (FIFO).
+
+CLASS QUEUE
+ FUNCTION enqueue(element)
+   ...fill in pseudocode here
+    A. append/push element to the end of the list
+ END FUNCTION
+
+ FUNCTION dequeue
+   ...fill in pseudocode here
+   A.   if queue is not empty
+            remove/shift the first element
+        end if
+ END FUNCTION
+END CLASS
+
