@@ -1,0 +1,48 @@
+Using proper pseudo-code, describe the following primitive algorithms:
+
+Making coffee;
+    A.  Select desired type of coffee   
+        Turn on Keurig
+        Open dispenser
+        Place k-cup in dispenser
+        Close dispenser
+        Place cup/mug under dispenser
+        Select desired size 
+        COFFEE!
+
+Washing dishes;
+    A.  Make sure dishwasher is empty
+        Turn on hot water
+        Rinse dirty dishes
+        Place dirty dishes into dishwasher
+        If dishwasher is full
+            add detergent
+            close dishwasher
+            start dishwasher
+        endif
+
+A choice of your own - Put gas in car
+    A.  Drive to gas situation
+        Park next to gas pump
+        Open gas tank door
+        Insert credit card for payment
+        Lift gas pump handle
+        Insert gas pump nozzle into gas tank
+        Select gas grade
+        Squeeze gas pump handle to begin pumping gas
+        When done pumping, remove nozzle from gas tank
+        Place nozzle back in gas pump
+        Close gas tank door
+        Take receipt
+
+As with the knot algorithm, there may be more than one way to solve the problem. It is essential to try to pick the best algorithm for a situation. 
+Name three companies who created an algorithm that made them successful, e.g., Google's search algorithm.
+It doesn't need to be a tech example (such as a recipe or manufacturing a product). Google's algorithm produces more relevant results than other search engines; 
+what about each of your cases make them stand out?
+    A.  LegalShield - their service trifecta (members that pay a fee for legal services, associates that direct sell the services, attorneys/firms that provide the legal services)
+        Top teams in sports - teams are constantly adjusting their algorithms based on the talents of their current players
+        H.B. Reese Candy Company - H.B. Reese was the inventer of the Reese's Peanut Butter Cup - that's all there is to say about that!
+
+Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
+    A. An inefficient algorithm may not get the desired result in a timely manner. Or it may get 'close' to a desired result, but not
+    completely accurate. 
