@@ -1,0 +1,55 @@
+What is a binary tree and what makes it unique to other trees?
+A.  A binary tree consists of nodes that point to a higher number with the right arm and a lower number with the left arm and may only have up to two nodes. 
+
+What is a heuristic?
+A. A heuristic is a guess that an algorithm will make in order to solve a complex problem quickly.
+
+What is another problem besides the shortest-path problem that requires the use of heuristics?
+A. Using simple math rounding when grocery shopping to estimate how much you are spending could be considered using heuristics. 
+
+What is the difference between a depth-first search and a breadth-first search?
+A. Depth-first search will travel down a single branch first. If the desired element isn't found, it will start back at the top and search the next branch. 
+    A breadth-first search will search an entire row of nodes before continuing to the next row to find the desired element.
+
+Explain in your own words what an undirected, a-cyclic, unweighted graph is.
+A.  An undirected, a-cyclic, unweighted graph would designate that the node connections are ambigious (no indicated start and stop locations), that the connections
+do not form a loop, and that there are not any associated weights with the node connections.
+
+What kind of graph is a binary search tree?
+A.  Directed, A-cyclic, unweighted
+
+
+Programming Questions
+
+Given a Binary Search Tree and a value, write a function that checks to see whether the value exists within the tree.
+Example: The value 10 exists in the tree. The value 23 does not exist in the tree.
+A.  set current node = root
+    while current node not equal to search data
+        if current node  greater than search data
+            go to left tree
+        else
+            go to right tree
+        endif
+        if current equals null
+            return not found
+        endif
+    endwhile
+    return current
+
+Given a Binary Search Tree and two nodes, n1 and n2, write a function that finds the distance between the two nodes.
+Example: The distance between the nodes 4 and 10 is 4. The distance between the nodes 8 and 10 is 1. The distance between the nodes 1 and 14 is 4.
+    A.      set temp variable equal to root
+            call count function with node1 returning path count
+            call count function with node2 returning path count
+            add path counts
+
+            FUNCTION call(node) 
+                if node not equal to root       
+                    while current node greater than or equal to root    
+                        node = current node
+                        current node = previous node
+                        count +=1
+                    endwhile
+                endif
+                return count
+            end function
