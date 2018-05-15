@@ -1,0 +1,48 @@
+Define and compare recursion and iteration.
+    A. Recursion is the process where a procedure, or function, calls itself repeatedly until a base case is met. Recursion works best in 
+    algorithms that combine sets of sub-results. 
+    Iteration uses a loop to repeat steps until a task/calculation is complete. Iteration works best when an algorithm requires running straight 
+    through a data set. 
+
+Name five algorithms that are commonly implemented by recursion.
+    A. binary search, merge sort, factorial operation, Fibonacci sequence, breadth-first and depth-first tree/graph algorithms
+
+When should you use recursion, and when should you avoid recursion? Give examples for each.
+    A. Recursion should be used when an algorithm uses a combination of sub-results. Recursion should be avoided when the cost of performance
+    might outweigh the cost of creating a more complex iterative implementation. 
+
+Compare the recursive and iterative solutions to the three algorithms from the checkpoint (Factorial, Maximum, and Fibonacci). 
+What is similar, and what is different?
+    A. Both the recursive and iterative solutions have a base case or a way to prevent infinite looping. The base cases in the recursive
+    solutions must be checked first. The iterative solutions for the Factorial and Maximum actually seem to be cleaner code.  
+
+Given a multi-dimensional collection (such as an array) where the number of dimensions is unknown, 
+write a recursive algorithm to count the number of items in the entire collection.
+    A.  FUNCTION countItems(multiArray)
+        var count
+            if multiArray[index] is an array
+                countItems(multiArray[index])
+            else 
+                count += 1
+            endif
+            return count
+        end function    
+
+A palindrome is a word or phrase whose spelling is the same either direction (e.g., racecar). 
+Write a recursive algorithm to determine if a given word or phrase is a palindrome.
+    A.  FUNCTION palindrome(str)
+            var strLength equal to str.strLength
+            if strLength is 0 or 1
+                return true
+            endif
+            if first letter (str[0]) equals last letter (str[strLength -1])
+                call palindrome with new array minus first and last characters ( str.slice(1, strLength -1) )
+            endif
+            return false
+        endfunction
+
+Laura and Xander are going door-to-door around their block looking for their lost cat. 
+Write a recursive algorithm showing one way they can visit every house on their block exactly once.
+    A.  I got stuck on this one. I asked my mentor about it and he too was unclear of which way we should go with it. 
+        Seems like there's some missing information. He suggested I just submit my answers and see if I could get
+        some additional info in order to complete this one!
