@@ -1,0 +1,30 @@
+What is a real-life scenario that uses linear search?
+    A. Searching through a to-do list
+
+What is a real-life scenario that uses binary search?
+    A. Searching through phonebook entries
+
+Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+    A. Seven
+
+Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+    A. Three
+
+Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? 
+Explain your reasoning.
+    A. Linear - the collection must be sorted in order for the binary search to work
+
+Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? 
+Explain your reasoning.
+    A. Binary - in a sorted collection, using the binary search would result in far fewer iterations before finding the target items
+
+Programming Assignment:
+You and a friend have set a wager to see who can find the word "Albatross" in the dictionary the fastest. 
+Write a program to allow you to win the bet.
+    A. see dictionarySearch.js
+
+You work at a pet store, and a child has asked you to net the only white-spotted goldfish from the fish tank. 
+Write a program that will help you net the right fish.
+    A. see netFish.js - but I ended up with the same program as the dictionary search. I have a feeling that's not quite right.
+    What am I missing? 
+
