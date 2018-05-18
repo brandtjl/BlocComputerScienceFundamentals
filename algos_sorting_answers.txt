@@ -1,0 +1,39 @@
+Write pseudocode for bubble sort.
+    A.  FUNCTION bubbleSort(collection)
+            do (while)
+                set swapped to false
+                for i=first index through last index - 1 
+                    if index i greater than index i+1
+                        set temp equal to index i
+                        set index i equal to index i+1
+                        set index i+1 equal to temp
+                        set swapped to true
+                    endif
+            while swapped equal true
+            return collection
+        end function  
+
+
+Write pseudocode for quicksort.
+    A.  FUNCTION quickSort(collection)
+            set pivot equal to last index
+            for i=first index through last index - 1
+                if index i greater than pivot
+                    index i moved to right of pivot
+                    pivot moves one index to the left
+                endif
+                quickSort(rightSide)
+                quickSort(leftSide)
+            endfor
+        end function
+
+We talked about time complexity in a previous checkpoint, and how to get an idea of the efficiency of an algorithm. 
+After looking at the pseudocode for the above sorting methods, identify why merge sort and quick sort are much more efficient than the others. 
+Walking through each algorithm with a few sample collections may help.
+    A. Merge and quick wouldn't have to iterate through the entire collection multiple times. They would only iterate through portions of the collection.
+
+All of the sorts addressed in this checkpoint are known as comparison sorts. Research bucket sort and explain how it works. 
+What is the ideal input for bucket sort?
+    A. A bucket sort distributes the elements of the original collection into pre-sorted 'buckets', or initially empty arrays.
+    Then each bucket/array is sorted and the sorted elements in the buckets are put back into the original array, in order.
+    A collection of integers that are well distributed over a range or when there are repetitions are situations that seem to be ideal for a bucket sort.  
